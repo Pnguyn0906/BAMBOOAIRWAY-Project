@@ -1,0 +1,465 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.head .navbar {
+  margin-top: 30px;
+}
+
+.navbar .bar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar .bar1 a {
+  color: #344054;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-weight: 550;
+}
+
+.navbar .bar1 a:hover {
+  color: #4b843f;
+  font-weight: bold;
+}
+
+/* navbar signup */
+.head .navbar02 {
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+.navbar02 .bar02 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar02 .bar02 li {
+}
+
+.banner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* List giá vé */
+.hcm-section {
+  background-color: hwb(0 98% 2%);
+  position: relative;
+}
+
+.box {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.box h1 {
+  color: #00558f;
+}
+
+.container .container-box-inside {
+}
+
+/* khung bảng vé table-header */
+
+.container .table-header {
+}
+
+.container .table-header .flight {
+  width: 95%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 16px;
+  position: relative;
+}
+
+.container .table-header .flight .feature {
+  min-height: 50px;
+  padding: 1rem;
+  background: #00558f;
+  color: #fcfcfd;
+}
+
+.container .table-header .flight .list .price {
+  display: flex;
+}
+
+.container .table-header .flight .list .price .price-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.container .table-header .flight .list .price button {
+  border: none;
+  margin-left: 20px;
+  margin: 25px auto;
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  box-shadow: 3px 2px #b7b7ee;
+}
+
+.container .table-header .flight .list .price button:hover {
+  opacity: 1;
+  background-color: #dfe6f4;
+  color: #125e91;
+  transition: opacity 0.5s ease-in-out;
+  width: 45px;
+  height: 45px;
+}
+
+.container .table-header .flight .list .price button .arrow-right {
+  color: #00558f;
+  height: 20px;
+  width: 20px;
+}
+
+.container .table-header .flight .feature-info01 {
+  border-bottom: 1px solid #a5a5a6;
+  min-height: 50px;
+  padding: 1rem;
+  background: #e6eef4;
+}
+
+.container .table-header .flight .feature-info02 {
+  border-bottom: 1px solid #a5a5a6;
+  min-height: 50px;
+  padding: 1rem;
+  background: white;
+}
+
+.container .table-header .flight .feature-info01:hover {
+  opacity: 1;
+  background-color: #3b485f;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container .table-header .flight tbody .feature-info02:hover {
+  opacity: 1;
+  background-color: #3b485f;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* button 'Xem thêm' */
+.container .flight-button-info {
+  font-size: 1rem;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 18px;
+}
+
+.container .flight-button-info .button-info {
+  background-color: #578c4c;
+  border: none;
+  color: white;
+  height: 6vh;
+  width: 100px;
+  margin-bottom: 5px;
+  border-radius: 12px;
+  padding: 5px;
+  /* cursor: pointer; */
+  box-shadow: 3px 2px 2px #bce442;
+}
+
+.container .flight-button-info .button-info:hover {
+  opacity: 1;
+  background-color: #6bae5e;
+  color: white;
+  transition: opacity 0.7s ease-in-out;
+  height: 6.5vh;
+  width: 108px;
+}
+
+/* SLIDER: slide-scroll */
+.slide-scroll {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.slide-scroll .slide01 {
+  display: flex;
+  gap: 0 20px;
+}
+
+.slide-scroll .slide01 .slide01-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slide-scroll .slide01 .slide01-pic img {
+  box-sizing: border-box;
+  height: 60vh;
+  width: 500px;
+  object-fit: cover;
+}
+
+.slide-scroll .slide01 .slide01-pic p {
+  font-style: italic;
+  font-family: Arial;
+  line-height: 1.2;
+  color: #101828;
+  padding: 5px 0;
+}
+
+.slide-scroll .slide01 .slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* FOOTER */
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #00000085;
+  font-weight: 600;
+}
+/* Footer - foot01*/
+.foot01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  line-height: 1.5;
+  height: 15vh;
+}
+
+.foot01 img {
+  max-width: 100%;
+  height: 60px;
+}
+
+.foot01 .straight {
+  font-size: 50px;
+  font-weight: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #dadae2;
+}
+
+.foot01 .slogan {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  color: #667085;
+  font-size: 30px;
+}
+
+/* Footer - foot02 */
+.foot02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 auto;
+  /* row-gap: 0.5px; */
+}
+.foot02 ul {
+  list-style-type: none;
+}
+.foot02 li {
+  margin: 1.5rem;
+}
+
+.foot02 .foot02-bamboo {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot02 .foot02-rule {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot02 .foot02-contact-info {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot02 .foot02-support {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot02 .foot02-qrcode .qr-box {
+  border: 4px solid rgba(100, 175, 83, 0.32);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  padding: 19px;
+  height: fit-content;
+  width: 16vw;
+  display: flex;
+}
+
+.foot02 .foot02-qrcode .qr-box img {
+  box-sizing: border-box;
+}
+.foot02 .foot02-qrcode .qr-box .qr-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.foot02 .foot02-qrcode .qr-box .qr-box-content .qr-text {
+  font-weight: 600;
+}
+
+.foot02 .foot02-qrcode .qr-box02 {
+  border: 4px solid rgba(115, 96, 242, 0.32);
+  border-radius: 16px;
+  padding: 12px;
+  height: 15vh;
+  width: 16vw;
+  display: flex;
+  /* position: relative; */
+}
+
+.foot02 .foot02-qrcode .qr-box02 img {
+  box-sizing: border-box;
+}
+.foot02 .foot02-qrcode .qr-box02 .qr-box-content02 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.foot02 .foot02-qrcode .qr-box02 .qr-box-content02 .qr-text02 {
+  font-weight: 600;
+}
+
+.foot02 ul .title {
+  color: #00558f;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* foot03 */
+.foot03 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.foot03 ul {
+  list-style-type: none;
+}
+.foot03 li {
+  margin: 1.5rem;
+}
+.foot03 .foot03-travel {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot03 .foot03-tour {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot03 .foot03-flight {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot03 .foot03-arrival {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot03 .foot03-local-flight {
+  max-width: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foot03 ul .title {
+  color: #00558f;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+/* footer04 */
+.footer04 {
+  display: flex;
+  max-width: 1200px;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+.footer04 .footer-logo {
+  display: flex;
+  gap: 3rem;
+}
+.footer04 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.contact-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-logo i {
+  color: #101828;
+  height: 60px;
+}
+/* footer05 */
+.footer05 {
+  max-width: 1200px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.approved {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}

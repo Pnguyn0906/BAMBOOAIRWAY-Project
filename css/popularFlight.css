@@ -1,0 +1,85 @@
+#popularFlight {
+  background: #f2f4f7;
+  max-width: none;
+  padding: 4rem 0;
+
+  overflow: hidden;
+}
+.popularFlight {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.popularFlight .top-title {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  padding-bottom: 3rem;
+}
+.flightList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.flightList-item,
+.flightList-item img {
+  border-radius: 20px;
+  background: #fff;
+}
+.flightList-item {
+  width: 23%;
+  height: fit-content;
+  padding-bottom: 40px;
+  position: relative;
+}
+.flightList-item .img {
+  height: 45%;
+  width: 100%;
+}
+.flightList-item .img img {
+  height: 100%;
+  width: 100%;
+}
+.flightInfo {
+  padding: 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.flightTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+.flightDate {
+  font-size: 15px;
+}
+.flightPrice {
+  color: #00558f;
+  font-weight: 600;
+}
+.flightPrice .cur {
+  font-size: 13px;
+  font-weight: 300;
+}
+.flightBooking-btn {
+  position: absolute;
+  z-index: 11111;
+  bottom: 7%;
+  right: 10%;
+  border-radius: 8px;
+  background-color: #f2f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.flightBooking-btn:hover {
+  background-color: #d8d8d8;
+}
+@media (max-width: 1200px) {
+  .flightList-item {
+    width: 45%;
+  }
+}

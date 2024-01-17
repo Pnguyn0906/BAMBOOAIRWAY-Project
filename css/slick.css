@@ -1,0 +1,50 @@
+.image-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.image-item:hover {
+  transform: scale(1.01);
+  background-color: #abe2a0e0;
+}
+.image-item {
+  background: #fff;
+  border-radius: 0 0 40px 0;
+  transition: all 0.3s ease-in-out;
+}
+.image-item .text {
+  margin: 1rem;
+  height: 200px;
+}
+.slick-initialized .slick-slide {
+  display: block;
+  margin: 2rem 10px;
+}
+.slick-arrow {
+  color: #fff;
+  background-color: #4b843f;
+  padding: 20px 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+}
+.slick-arrow:hover {
+  color: #4b843f;
+  background-color: #fff;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .slick-slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

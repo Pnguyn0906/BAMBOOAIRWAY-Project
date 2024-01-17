@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.head .navbar {
+  margin-top: 30px;
+}
+
+.navbar .bar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar .bar1 a {
+  color: #344054;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-weight: 550;
+}
+
+.navbar .bar1 a:hover {
+  color: #4b843f;
+  font-weight: bold;
+}
+
+/* navbar signup */
+.head .navbar02 {
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+.navbar02 .bar02 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar02 .bar02 li {
+}
+
+.banner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.table-ticket {
+  background-color: white;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#flightTable {
+  border: 1px solid rgb(230, 221, 221);
+  background-color: whitesmoke;
+}
+
+#flightTable .feature-info02 {
+  border-bottom: 1px solid #a5a5a6;
+  min-height: 50px;
+  padding: 1rem;
+  background: #e6eef4;
+}
+
+#flightTable .feature-info01 {
+  border-bottom: 1px solid #00558f;
+  min-height: 50px;
+  padding: 1rem;
+  background: white;
+}
+
+#flightTable .feature-info01:hover {
+  opacity: 1;
+  background-color: #3b485f;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#flightTable .feature-info02:hover {
+  opacity: 1;
+  background-color: #3b485f;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#flightTable .list th {
+  max-width: 1200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

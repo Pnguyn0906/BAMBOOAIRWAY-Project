@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.head .navbar {
+  margin-top: 30px;
+}
+
+.navbar .bar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar .bar1 a {
+  color: #344054;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-weight: 550;
+}
+
+.navbar .bar1 a:hover {
+  color: #4b843f;
+  font-weight: bold;
+}
+
+/* navbar signup */
+.head .navbar02 {
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+.navbar02 .bar02 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar02 .bar02 li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.banner {
+  max-width: 100%;
+  box-sizing: border-box;
+}
