@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans";
+}
+header,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: fit-content;
+  padding: 20px 0;
+}
+#body {
+  height: 80vh;
+  background-image: url("../img/sky-bg.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 10px solid #cecece;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  background: #fff;
+  padding: 40px 70px 0 70px;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.wrapper .title {
+  color: #00558f;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2rem;
+  text-align: center;
+}
+label {
+  width: 100%;
+  margin: 10px 0;
+}
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid #d0d5dd;
+}
+input:focus {
+  transition: 0.5s ease-in-out;
+  border: 1.5px solid #4b843f;
+  outline: none;
+}
+.below-input {
+  justify-content: space-between;
+  width: 100%;
+}
+.save-info {
+  gap: 5px;
+}
+.below-input,
+.save-info {
+  display: flex;
+  flex-direction: row;
+}
+#saveInfoCheckbox {
+  width: 20px;
+}
+.loginBtn {
+  margin: 2rem;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background: #d0d5dd;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+.registerLink {
+  background: #f2f4f7;
+  padding: 0 20px;
+  width: 30vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 0 10px 10px;
+}
+a {
+  color: #4b843f;
+}
+.forgot-password a {
+  color: #667085;
+  text-decoration: none;
+}

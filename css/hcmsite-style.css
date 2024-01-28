@@ -7,6 +7,7 @@
 html,
 body {
   scroll-behavior: smooth;
+  font-family: "Open Sans";
 }
 
 header {
@@ -17,21 +18,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#nav_logo {
+  margin-left: 20px;
 }
 
-.head .navbar {
+.head .nav {
   margin-top: 30px;
 }
 
-.navbar .bar1 {
+.nav .nav01 {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
 }
 
-.navbar .bar1 a {
+.nav .nav01 a {
   color: #344054;
   text-decoration: none;
   padding: 7px 15px;
@@ -40,30 +47,40 @@ header {
   font-weight: 550;
 }
 
-.navbar .bar1 a:hover {
+.nav .nav01 a:hover {
   color: #4b843f;
   font-weight: bold;
 }
 
-/* navbar signup */
-.head .navbar02 {
-  margin-top: 30px;
-  padding-right: 10px;
-}
-
-.navbar02 .bar02 {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  list-style: none;
-}
-
-.navbar02 .bar02 li {
-}
-
+/* BANNER */
 .banner {
-  width: 100%;
+  background-image: url("../img/hcmcity.avif");
+  width: 99vw;
+  height: 400px;
+  object-fit: cover;
   box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+}
+
+/* BAR - MULTI_BAR */
+.bar {
+  max-width: 1200px;
+  margin: 22px auto;
+}
+.bar .multi-bar {
+  font-weight: 400;
+}
+.bar .multi-bar a {
+  text-decoration: none;
+  color: #909cac;
+}
+.bar .multi-bar i:hover {
+  color: #757c85;
+}
+
+.bar .multi-bar a:hover {
+  color: #4b843f;
 }
 
 /* List giá vé */
@@ -76,18 +93,92 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .box h1 {
   color: #00558f;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .container .container-box-inside {
+  background-color: white;
+}
+
+.container .container-box-inside h3 {
+  margin-top: 60px;
+  color: #00558f;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-flight {
+  display: flex;
+  gap: 20px;
+  padding-right: 30px;
+}
+
+/* Khung tìm vé */
+.find-flight01 {
+  border: 1px solid rgb(173, 170, 170);
+  display: flex;
+  height: 60px;
+  width: fit-content;
+  margin-bottom: 20px;
+  margin-left: 27px;
+  padding: 10px 20px;
+}
+.departure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.departure input {
+  border: none;
+  height: 30px;
+}
+.departure label {
+  font-weight: 500;
+  color: rgb(138, 135, 135);
+}
+.departure label,
+.departure input {
+  padding: 20px;
+  margin: 0 20px;
+}
+.departure .flight-icon {
+  margin-bottom: 45px;
+}
+.flight-exchange {
+  border: 1px solid rgb(173, 170, 170);
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 326px;
+  margin-top: 10px;
+}
+.flight-exchange input {
+  border: none;
+  width: 240px;
+  padding: 10px;
+}
+.flight-exchange .select {
+  border: none;
+  background-color: white;
 }
 
 /* khung bảng vé table-header */
 
 .container .table-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
 }
 
 .container .table-header .flight {
@@ -171,7 +262,7 @@ header {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* button 'Xem thêm' */
+/* BUTTON 'Xem thêm' */
 .container .flight-button-info {
   font-size: 1rem;
   line-height: 20px;
@@ -203,21 +294,44 @@ header {
   width: 108px;
 }
 
+.slide-box {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+.slide-box h2 {
+  color: #4b843f;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 /* SLIDER: slide-scroll */
 .slide-scroll {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 10px;
 }
-.slide-scroll .slide01 {
+.slide-scroll h2 {
+  color: #4b843f;
+}
+.slide01 {
   display: flex;
+  justify-content: center;
+  gap: 0 20px;
+}
+.slide {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   gap: 0 20px;
 }
 
 .slide-scroll .slide01 .slide01-pic {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
 }
 
 .slide-scroll .slide01 .slide01-pic img {
@@ -236,9 +350,310 @@ header {
 }
 
 .slide-scroll .slide01 .slide-content {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1;
+  z-index: 5;
+  transition: all 0.2s linear;
+}
+.slick-arrow:hover {
+  background-color: #00558f;
+  color: white;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+/* KINH NGHIỆM DU LỊCH */
+.experience {
+  padding: 30px auto;
+}
+.experience h2 {
+  color: #4b843f;
+}
+/* THÔNG TIN HỮU ÍCH */
+.useful h2 {
+  color: #4b843f;
+}
+.useful-info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 50px;
+}
+/* QUY ĐỔI TIỀN */
+.money {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.money i {
+  transform: scale(1.2);
+  color: #00558f;
+}
+.money #money-header {
+  color: #00558f;
+}
+.exchange-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  gap: 10px;
+}
+.exchange {
+  border: 1px solid rgb(194, 199, 237);
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  width: 240px;
+}
+.exchange input {
+  border: none;
+  width: 150px;
+  padding: 10px;
+}
+.exchange input:focus {
+  outline: none;
+  border: 1px solid #4b843f;
+}
+.exchange .select {
+  border: none;
+  background-color: white;
+}
+
+#transferCurrency {
+  width: 28px;
+  height: 28px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--primary-green-700, #327c23);
+}
+/* THỜI TIẾT */
+.weather {
+}
+.weather-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.weather-header i {
+  transform: scale(1.2);
+  color: #00558f;
+}
+.weather-header h4 {
+  color: #00558f;
+}
+.status {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.status-each-date {
+  width: 180px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 2px 1px rgba(218, 224, 249, 0.7);
+}
+.status-each-date .status-icon {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(225, 232, 235);
+  border-top-right-radius: 15px 15px;
+  border-top-left-radius: 15px 15px;
+}
+.status-each-date .status-icon i {
+  font-size: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3c87b8;
+}
+.status-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.status-info h4 {
+  color: #4b843f;
+}
+.status-info span {
+  color: rgb(67, 67, 67);
+  font-size: 16px;
+}
+/* ĐĂNG KÝ */
+
+.register-info {
+  background-image: url("../img/hcmsign.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 60vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.register {
+  position: absolute;
+  height: 320px;
+  width: 550px;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+  margin-bottom: 50px;
+  border-top-left-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 20px;
+}
+.register input {
+  height: 35px;
+}
+.register button {
+  background-color: #00558f;
+  color: white;
+  border: none;
+  width: 180px;
+  height: 40px;
+  margin-left: 60px;
+  border-radius: 6px;
+}
+
+.register .tickbox {
+  display: flex;
+  font-style: italic;
+  gap: 5px;
+  margin-top: 5px;
+}
+.register .tickbox input {
+  height: 16px;
+  width: 16px;
+}
+
+.register .tickbox label {
+  font-size: 12px;
+  padding-bottom: 6px;
+}
+
+/* ĐỊA ĐIỂM KHÁC */
+.additional {
+  background-color: white;
+}
+.new-location {
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.new-location h2 {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.locate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+.tour01 {
+  background-image: url("../img/hn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 40vh;
+  width: 33vw;
+  border-top-right-radius: 35px 35px;
+  border-bottom-left-radius: 35px 35px;
+  position: relative;
+}
+
+.tour02 {
+  background-image: url("../img/danang01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 40vh;
+  width: 33vw;
+  border-top-right-radius: 35px 35px;
+  border-bottom-left-radius: 35px 35px;
+  position: relative;
+}
+
+.tour03 {
+  background-image: url("../img/condao01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 40vh;
+  width: 33vw;
+  border-top-right-radius: 35px 35px;
+  border-bottom-left-radius: 35px 35px;
+  position: relative;
+}
+
+.tour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-top-right-radius: 35px 35px;
+  border-bottom-left-radius: 35px 35px;
+  z-index: 4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+}
+.tour:hover {
+  opacity: 1;
+}
+.tour h3 {
+  font-size: 30px;
 }
 
 /* FOOTER */

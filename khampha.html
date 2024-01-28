@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Điểm Đến</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header-hcmsite.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -14,13 +24,17 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"
     />
   </head>
   <body>
     <div class="location">
       <header class="head">
-        <a href="#">
+        <a href="index.html">
           <img
             id="nav_logo"
             src="https://www.bambooairways.com/o/wpbav-content-theme/css/assets/logo.png"
@@ -35,99 +49,130 @@
             <li><a href="#">Bamboo Club</a></li>
           </ul>
         </nav>
-        <nav class="navbar02">
-          <ul class="bar02">
-            <li>
-              <i class="search-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="search-icon"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-              </i>
-            </li>
-            <li>Trợ giúp</li>
-            <li>|</li>
-            <li>Việt Nam • Tiếng Việt</li>
-            <li>Đăng nhập</li>
-            <li>|</li>
-            <li>Đăng kí</li>
-            <li>
-              <i class="person-circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="person-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-                  />
-                </svg>
-              </i>
-            </li>
-          </ul>
-        </nav>
+        <div class="side-nav">
+          <div class="side-nav1">
+            <div class="side-nav1-1">
+              <!-- icon -->
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.9167 9.16667H10.2583L10.025 8.94167C10.8417 7.99167 11.3333 6.75833 11.3333 5.41667C11.3333 2.425 8.90833 0 5.91667 0C2.925 0 0.5 2.425 0.5 5.41667C0.5 8.40833 2.925 10.8333 5.91667 10.8333C7.25833 10.8333 8.49167 10.3417 9.44167 9.525L9.66667 9.75833V10.4167L13.8333 14.575L15.075 13.3333L10.9167 9.16667ZM5.91667 9.16667C3.84167 9.16667 2.16667 7.49167 2.16667 5.41667C2.16667 3.34167 3.84167 1.66667 5.91667 1.66667C7.99167 1.66667 9.66667 3.34167 9.66667 5.41667C9.66667 7.49167 7.99167 9.16667 5.91667 9.16667Z"
+                  fill="#344054"
+                ></path>
+              </svg>
+              <a href="">TRỢ GIÚP</a>
+            </div>
+            <div class="side-nav1-2">
+              <!-- icon -->
+              <div class="lang-icon">
+                <img src="./img/vietnam_lang_icon.png" alt="" />
+              </div>
+              <span class="location">Việt Nam</span>
+              <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg
+                height="8.829px"
+                id="Capa_1"
+                style="enable-background: new 0 0 8.829 8.829"
+                version="1.1"
+                viewBox="0 0 8.829 8.829"
+                width="8.829px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M4.415,8.829c2.432,0,4.415-1.983,4.415-4.415  C8.829,1.983,6.846,0,4.415,0S0,1.983,0,4.415C0,6.846,1.983,8.829,4.415,8.829z"
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: #231f20"
+                />
+              </svg>
+              <span class="language">Tiếng Việt</span>
+            </div>
+          </div>
+          <div class="side-nav2">
+            <div class="side-nav2-1">
+              <a href="">Đăng nhập</a>
+            </div>
+            <div class="side-nav2-2">
+              <a href="">Đăng ký</a>
+              <!-- icon -->
+              <img src="./img/header_avatar.png" alt="" height="20px" />
+            </div>
+          </div>
+        </div>
       </header>
 
       <nav class="bar-menu"></nav>
     </div>
     <div class="banner"></div>
+    <div class="bar">
+      <div class="multi-bar">
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+        <svg
+          class="mr-2"
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.66656 4.5L5.72656 5.44L8.7799 8.5L5.72656 11.56L6.66656 12.5L10.6666 8.5L6.66656 4.5Z"
+            fill="#D0D5DD"
+          ></path>
+        </svg>
+        <a href="#">Khám Phá</a>
+      </div>
+    </div>
     <section class="list-travel">
       <div class="box">
         <h1>Việt Nam</h1>
         <div class="travel-box">
           <div class="place1 travel">
-            <img src="./picture/hcm.jpg" alt="" />
+            <img src="./img/hcm.jpg" alt="" />
             <div class="action">
               <a href="hcmsite.html">HCM ></a>
             </div>
           </div>
           <div class="place2 travel">
-            <img src="./picture/hanoi.jpg" alt="" />
+            <img src="./img/hanoi.jpg" alt="" />
             <div class="action">
-              <a href="hanoipage.html">Hà Nội ></a>
+              <a href="hcmsite.html">Hà Nội ></a>
             </div>
           </div>
           <div class="place3 travel">
-            <img src="./picture/condao.jpg" alt="" />
+            <img src="./img/condao.jpg" alt="" />
             <div class="action">
-              <a href="hcmpage.html">Côn Đảo ></a>
+              <a href="hcmsite.html">Côn Đảo ></a>
             </div>
           </div>
           <div class="place4 travel">
-            <img src="./picture/camau.jpg" alt="" />
+            <img src="./img/camau.jpg" alt="" />
             <div class="action">
-              <a href="hcmpage.html">Cà Mau ></a>
+              <a href="hcmsite.html">Cà Mau ></a>
             </div>
           </div>
           <div class="place5 travel">
-            <img src="./picture/rachgia.jpg" alt="" />
+            <img src="./img/rachgia.jpg" alt="" />
             <div class="action">
-              <a href="hcmpage.html">Rạch Giá ></a>
+              <a href="hcmsite.html">Rạch Giá ></a>
             </div>
           </div>
           <div class="place6 travel">
-            <img src="./picture/quangnam.jpg" alt="" />
+            <img src="./img/quangnam.jpg" alt="" />
             <div class="action">
-              <a href="hcmpage.html">Quảng Nam ></a>
+              <a href="hcmsite.html">Quảng Nam ></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <div class="footer">
       <footer>
         <div class="foot01">
@@ -180,7 +225,11 @@
             <ul>
               <li>
                 <div class="qr-box">
-                  <img src="./picture/Qrcode.jpg" alt="" />
+                  <img
+                    src="https://www.bambooairways.com/documents/20122/770343/app.png/4074ab42-5f15-760b-9bb7-5d522d7ff200?t=1697600790190"
+                    height="95px"
+                    alt=""
+                  />
                   <div class="qr-box-content">
                     <p class="qr-text">Cài Đặt Ứng Dụng</p>
                     <p>Quét Mã Ngay Để Cài Đặt Từ Các Cửa Hàng Ứng Dụng!</p>
@@ -189,7 +238,11 @@
               </li>
               <li>
                 <div class="qr-box02">
-                  <img src="./picture/qrcode02.jpg" alt="" />
+                  <img
+                    src="https://www.bambooairways.com/documents/20122/770343/viber-bamboo.png/a21d4733-0669-665b-4b16-a12e153b7098?t=1697600790190"
+                    height="95px"
+                    alt=""
+                  />
                   <div class="qr-box-content02">
                     <p class="qr-text02">Cài Đặt Nhãn Dán</p>
                     <p>Quét mã ngay để sở hữu bộ nhãn dán Viber!</p>
@@ -248,6 +301,62 @@
               <li>Đi Hà Nội</li>
               <li>Đi TP.Hồ CHí Minh</li>
             </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer04">
+          <div class="footer-logo">
+            <img src="./img/giaithuong-logo-1.svg" height="90px" alt="" />
+            <img
+              src="https://www.bambooairways.com/documents/20122/1180395/by+skytrax.png/fde6856e-13c6-8154-ff8c-a60cb8cab729?t=1697599711760"
+              height="90px"
+              alt=""
+            />
+            <img
+              src="https://www.bambooairways.com/documents/20122/1180395/image+73.png/4c42cb4b-dd2d-a1d9-79c6-f8080cb1981f?t=1697599711760"
+              height="90px"
+              alt=""
+            />
+            <img src="./img/giaithuong-logo.svg" height="90px" alt="" />
+          </div>
+          <div class="contact">
+            <div class="title">Theo Dõi Trên Mạng Xã Hội</div>
+            <div class="contact-logo">
+              <a href="https://www.facebook.com/BambooAirwaysFanpage"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/bamboo.airways"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.tiktok.com/@bambooairways"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a href="https://m.youtube.com/c/BambooAirwaysOfficial"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://twitter.com/bamboo_airways"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer05">
+          <div class="copyright">
+            &copy; 2024 Bamboo Airways Copyright. All Rights Reserved. <br />
+            Business Registration Code: 0107867370
+          </div>
+          <div class="approved">
+            <img
+              src="https://images.dmca.com/Badges/dmca_protected_17_120.png?ID=86ee4e9d-5b7e-43bb-97c0-24d9bfb97a6c"
+              height="50px"
+              alt=""
+            />
+            <img
+              src="https://www.bambooairways.com/documents/20122/770517/Thong_bao_bo_cong_thuong.png/fea4793f-05e2-d8ab-9c3d-c9e81c9d30ae?t=1697600771047"
+              height="70px"
+              alt=""
+            />
           </div>
         </div>
       </footer>

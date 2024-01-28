@@ -1,0 +1,75 @@
+.side-nav {
+  width: 450px;
+  transform: scale(0.86);
+}
+
+.side-nav1 {
+  width: 100%;
+  display: flex;
+  font-weight: 500;
+  justify-content: end;
+}
+.side-nav1 .side-nav1-1 {
+  width: 35%;
+  height: 100%;
+  z-index: 6;
+  border-right: 1px solid black;
+}
+.side-nav1 .side-nav1-1 a {
+  text-decoration: none;
+  color: #344054;
+}
+.side-nav1 .side-nav1-1,
+.side-nav1 .side-nav1-2 {
+  padding: 0 1rem;
+}
+.side-nav1-1 {
+  text-align: end;
+}
+.side-nav1-2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.side-nav1-2 svg {
+  transform: scale(0.7);
+}
+.side-nav1-2 .lang-icon {
+  height: 20px;
+  width: 20px;
+}
+.side-nav1-2 .lang-icon img {
+  height: 100%;
+}
+.side-nav2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 0.6rem;
+}
+.side-nav2-1 {
+  border-right: 1px solid black;
+}
+.side-nav2-2 {
+  gap: 0.6rem;
+}
+.side-nav2 .side-nav2-1,
+.side-nav2 .side-nav2-2 {
+  text-align: center;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-nav2 a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.side-nav2-1 a {
+  color: #00558f;
+}
+.side-nav2-2 a {
+  color: #4b843f;
+}

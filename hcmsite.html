@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HCM Page</title>
     <link rel="stylesheet" href="./css/hcmsite-style.css" />
+    <link rel="stylesheet" href="./css/header-hcmsite.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,7 +13,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,75 +39,138 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SYw9zVgdnP4FF5P3hpuuCEz7uG1qKGti6N5c"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div class="location">
       <header class="head">
-        <a href="#">
+        <a href="index.html">
           <img
             id="nav_logo"
             src="https://www.bambooairways.com/o/wpbav-content-theme/css/assets/logo.png"
             alt="bamboo_airways_logo"
           />
         </a>
-        <nav class="navbar">
-          <ul class="bar1">
+        <nav class="nav">
+          <ul class="nav01">
             <li><a href="#">Khám Phá</a></li>
             <li><a href="#">Đặt Vé</a></li>
             <li><a href="#">Thông Tin Hành Trình</a></li>
             <li><a href="#">Bamboo Club</a></li>
           </ul>
         </nav>
-        <nav class="navbar02">
-          <ul class="bar02">
-            <li>
-              <i class="search-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="search-icon"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-              </i>
-            </li>
-            <li>Trợ giúp</li>
-            <li>|</li>
-            <li>Việt Nam • Tiếng Việt</li>
-            <li>Đăng nhập</li>
-            <li>|</li>
-            <li>Đăng kí</li>
-            <li>
-              <i class="person-circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="person-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-                  />
-                </svg>
-              </i>
-            </li>
-          </ul>
-        </nav>
+
+        <div class="side-nav">
+          <div class="side-nav1">
+            <div class="side-nav1-1">
+              <!-- icon -->
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.9167 9.16667H10.2583L10.025 8.94167C10.8417 7.99167 11.3333 6.75833 11.3333 5.41667C11.3333 2.425 8.90833 0 5.91667 0C2.925 0 0.5 2.425 0.5 5.41667C0.5 8.40833 2.925 10.8333 5.91667 10.8333C7.25833 10.8333 8.49167 10.3417 9.44167 9.525L9.66667 9.75833V10.4167L13.8333 14.575L15.075 13.3333L10.9167 9.16667ZM5.91667 9.16667C3.84167 9.16667 2.16667 7.49167 2.16667 5.41667C2.16667 3.34167 3.84167 1.66667 5.91667 1.66667C7.99167 1.66667 9.66667 3.34167 9.66667 5.41667C9.66667 7.49167 7.99167 9.16667 5.91667 9.16667Z"
+                  fill="#344054"
+                ></path>
+              </svg>
+              <a href="">TRỢ GIÚP</a>
+            </div>
+            <div class="side-nav1-2">
+              <!-- icon -->
+              <div class="lang-icon">
+                <img src="./img/vietnam_lang_icon.png" alt="" />
+              </div>
+              <span class="location">Việt Nam</span>
+              <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg
+                height="8.829px"
+                id="Capa_1"
+                style="enable-background: new 0 0 8.829 8.829"
+                version="1.1"
+                viewBox="0 0 8.829 8.829"
+                width="8.829px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M4.415,8.829c2.432,0,4.415-1.983,4.415-4.415  C8.829,1.983,6.846,0,4.415,0S0,1.983,0,4.415C0,6.846,1.983,8.829,4.415,8.829z"
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: #231f20"
+                />
+              </svg>
+              <span class="language">Tiếng Việt</span>
+            </div>
+          </div>
+          <div class="side-nav2">
+            <div class="side-nav2-1">
+              <a href="">Đăng nhập</a>
+            </div>
+            <div class="side-nav2-2">
+              <a href="">Đăng ký</a>
+              <!-- icon -->
+              <img src="./img/header_avatar.png" alt="" height="20px" />
+            </div>
+          </div>
+        </div>
       </header>
 
       <nav class="bar-menu"></nav>
     </div>
-    <img class="banner" alt="BAMBOO Banner" src="./picture/bamboo-hcm.jpg" />
-
+    <div class="banner"></div>
+    <div class="bar">
+      <div class="multi-bar">
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+        <svg
+          class="mr-2"
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.66656 4.5L5.72656 5.44L8.7799 8.5L5.72656 11.56L6.66656 12.5L10.6666 8.5L6.66656 4.5Z"
+            fill="#D0D5DD"
+          ></path>
+        </svg>
+        <a href="#">Khám Phá</a>
+        <svg
+          class="mr-2"
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.66656 4.5L5.72656 5.44L8.7799 8.5L5.72656 11.56L6.66656 12.5L10.6666 8.5L6.66656 4.5Z"
+            fill="#D0D5DD"
+          ></path>
+        </svg>
+        <a href="#">HCM Page</a>
+      </div>
+    </div>
     <section class="hcm-section">
       <div class="box">
         <h1>HỒ CHÍ MINH</h1>
@@ -123,10 +194,79 @@
           Airways để bước vào cuộc hành trình khám phá thành phố rực rỡ sắc màu
           và đầy thi vị này!
         </p>
-        <img src="hcm.jpg" alt="" />
 
         <section class="container">
           <div class="container-box-inside">
+            <h3>VÉ MÁY BAY ĐI HỒ CHÍ MINH</h3>
+            <div class="find-flight">
+              <div class="find-flight01">
+                <div class="departure">
+                  <label for="depart">Điểm Đi</label>
+                  <input type="text" id="dpart" name="depart" value="" />
+                  <div class="flight-icon">
+                    <svg
+                      class="d-none d-md-block"
+                      style="position: absolute; z-index: 1; cursor: pointer"
+                      width="24"
+                      height="46"
+                      viewBox="0 0 24 46"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12.5"
+                        y1="-2.18558e-08"
+                        x2="12.5"
+                        y2="11"
+                        stroke="#D0D5DD"
+                      ></line>
+                      <rect
+                        y="11"
+                        width="24"
+                        height="24"
+                        rx="12"
+                        fill="#64AF53"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.39196 23.4539H4.78641C4.66515 23.4539 4.54427 23.4539 4.48383 23.3935C4.36257 23.3331 4.36257 23.1514 4.24169 23.0909C4.36295 23.0305 4.42339 22.9697 4.54427 22.9092C4.78641 22.8488 5.08937 22.8488 5.3315 22.788C5.08936 22.3641 4.84722 21.9403 4.60509 21.5165C4.42339 21.2139 4.24169 20.9109 4.05999 20.5475C3.93873 20.245 3.99955 20.1841 4.30213 20.1841H5.02855C5.33113 20.1841 5.51283 20.3054 5.69453 20.4867C6.05793 21.0318 6.48176 21.5161 6.84475 22.0612C6.90519 22.1217 7.02645 22.1825 7.08689 22.1825C8.47962 22.0612 9.81162 21.9404 11.2043 21.8799C11.2043 21.8799 11.2648 21.8799 11.2648 21.8195C11.2044 21.4561 11.0831 21.0931 11.0227 20.7297C10.5384 18.6709 10.0537 16.6729 9.50896 14.6142C9.44852 14.4325 9.50897 14.3721 9.69067 14.3721C10.4171 14.3721 10.9017 14.6747 11.2043 15.341C12.1125 16.9759 13.021 18.6713 13.9291 20.3061C14.1108 20.6695 14.3529 21.0326 14.5346 21.3959C14.5951 21.5172 14.6559 21.5776 14.8372 21.5776C16.1087 21.4564 17.3803 21.4564 18.6517 21.7593C19.0151 21.8198 19.3781 22.0015 19.6811 22.2436C20.1049 22.5462 20.1049 22.97 19.6811 23.273C19.3177 23.5151 18.8939 23.6968 18.5309 23.8181C17.5619 24.1207 16.5934 24.1207 15.564 24.1207C12.9605 24.1811 10.4171 23.9994 7.81363 23.8785H7.51104C7.20846 23.8181 6.96594 23.939 6.84506 24.1811C6.60292 24.605 6.29996 25.0288 5.99739 25.4526C5.75525 25.816 5.45229 25.9977 5.02846 25.9369C4.9072 25.9369 4.72587 25.9369 4.60461 25.8764C4.30203 25.816 4.24121 25.6947 4.36247 25.3921C4.66505 24.7866 4.96801 24.2419 5.27059 23.6364C5.33141 23.6356 5.33141 23.5143 5.39185 23.4539L5.39196 23.4539Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.5928 24.8458C13.9872 26.0569 13.4425 27.268 12.8974 28.4787C12.534 29.2659 12.171 29.9923 11.8076 30.7796C11.5655 31.3851 10.7782 31.6273 10.3543 31.6273C10.1122 31.6273 10.0518 31.506 10.0518 31.2639C10.1122 31.0217 10.173 30.84 10.173 30.5979C10.5364 28.7208 10.9603 26.8438 11.3232 24.9063C11.3232 24.8459 11.3232 24.785 11.3837 24.7246C12.413 24.785 13.5029 24.8458 14.5928 24.8458Z"
+                        fill="white"
+                      ></path>
+                      <line
+                        x1="12.5"
+                        y1="35"
+                        x2="12.5"
+                        y2="46"
+                        stroke="#D0D5DD"
+                      ></line>
+                    </svg>
+                  </div>
+                  <label for="arrive">Điểm Đến</label>
+                  <input type="text" id="arrive" name="arrive" value="" />
+                </div>
+              </div>
+              <div class="flight-exchange">
+                <input type="text" placeholder="nhập số tiền" />
+                <select class="select">
+                  <option value="">VND</option>
+                  <option value="eur">EUR</option>
+                  <option value="sgd">SGD</option>
+                  <option value="cny">CNY</option>
+                  <option value="myr">MYR</option>
+                  <option value="usd">USD</option>
+                  <option value="rub">RUB</option>
+                  <option value="aud">AUD</option>
+                  <option value="twd">TWD</option>
+                </select>
+              </div>
+            </div>
             <div class="table-header" id="table-header">
               <table class="flight">
                 <tr class="feature">
@@ -399,80 +539,302 @@
             </div>
           </div>
         </section>
+        <hr />
+        <div class="slide-box">
+          <h2>KHÁM PHÁ</h2>
+          <div class="slide-scroll">
+            <div class="slide01">
+              <div class="slide">
+                <div class="slide01-pic">
+                  <img src="./img/SGN-nhatho.jpg" alt="" />
+                  <p>NHÀ THỜ ĐỨC BÀ</p>
+                </div>
+                <div class="slide01-content">
+                  <p>
+                    Nhà thờ chính tòa Đức Bà Sài Gòn, thường được gọi tắt là Nhà
+                    thờ Đức Bà, là nhà thờ chính tòa của Tổng giáo phận Sài Gòn.
+                    Nhà thờ không chỉ là biểu tượng của Công giáo ở Việt Nam, mà
+                    còn là một trong những công trình kiến trúc độc đáo của
+                    Thành phố Hồ Chí Minh và điểm đến nổi tiếng với du khách.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide01">
+              <div class="slide">
+                <div class="slide01-pic">
+                  <img src="./img/SGN-phodibo.jpg" alt="" />
+                  <p>PHỐ ĐI BỘ NGUYỄN HUỆ</p>
+                </div>
+                <div class="slide01-content">
+                  <p>
+                    Phố đi bộ Nguyễn Huệ được khánh thành vào đúng dịp lễ 30/04
+                    năm 2015 với 2 khu vực chính là quảng trường Nguyễn Huệ kéo
+                    dài từ đường Lê Lợi đến đường Tôn Đức Thắng và công viên
+                    tượng đài Chủ tịch Hồ Chí Minh kéo dài từ đường Lê Thánh
+                    Tông đến đường Lê Lợi. Tổng chiều dài của phố đi bộ là 670m
+                    và chiều rộng là 64m với toàn bộ khu vực quảng trường được
+                    lát đá granite.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide01">
+              <div class="slide">
+                <div class="slide01-pic">
+                  <img src="./img/SGN-landmark.jpg" alt="" />
+                  <p>TÒA NHÀ LANDMARK 81</p>
+                </div>
+                <div class="slide01-content">
+                  <p>
+                    Là một trong những địa điểm vui chơi - giải trí nổi bật tại
+                    thành phố Hồ Chí Minh, Landmark 81 quy tụ nhiều thương hiệu
+                    nổi tiếng trong nước và quốc tế, mang đến trải nghiệm mua
+                    sắm tuyệt vời cho khách hàng. Đây là tòa tháp cao nhất Việt
+                    Nam, đồng thời là một trong những tòa nhà cao nhất Châu Á và
+                    thế giới. Landmark 81 được lấy cảm hứng từ “lũy tre làng”
+                    truyền thống, tượng trưng cho sự phát triển và thịnh vượng
+                    của đất nước.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide01">
+              <div class="slide">
+                <div class="slide01-pic">
+                  <img src="./img/SGN-buivien.jpg" alt="" />
+                  <p>PHỐ TÂY BÙI VIỆN</p>
+                </div>
+                <div class="slide01-content">
+                  <p>
+                    Phố Bùi Viện đã từng được biết đến là khu Tây ba lô do lượng
+                    khách du lịch đến đây chủ yếu từ các nước phương Tây và là
+                    nơi “ăn chơi” dành riêng cho các bạn trẻ Sài Thành. Con phố
+                    vốn đã nhộn nhịp nay càng trở nên tấp nập, đông vui hơn nữa.
+                    Phố đi bộ Bùi Viện 2 ngày cuối tuần trở nên náo nhiệt hơn
+                    bao giờ hết bởi các hoạt động vui chơi giải trí độc đáo, hấp
+                    dẫn. Nhiều màn biểu diễn nghệ thuật từ các vỉa hè cho đến
+                    dưới lòng đường thu hút được rất nhiều du khách, tạo nên
+                    không khí hết sức sôi động. Các trò chơi dân gian như nhảy
+                    dây, ô ăn quan,… đã nhận được sự quan tâm đặc biệt từ các du
+                    khách nước ngoài.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="experience">
+          <h2>KINH NGHIỆM DU LỊCH</h2>
+          <ul>
+            <li>
+              Mùa xuân (từ tháng 3 đến tháng 4) và mùa thu (từ tháng 4 đến tháng
+              8) là thời điểm lý tưởng để lên kế hoạch khám phá Hà Nội. Đây là
+              lúc tiết trời đẹp nhất trong năm ở Hà Nội, với bầu trời xanh
+              trong, gió heo may se se lạnh, lá vàng rơi, mùi hoa sữa thoảng nhẹ
+              tạo nên khung cảnh lãng mạn, hoài cổ
+            </li>
+            <li>
+              Mang theo bản đồ khi dạo quanh phố cổ Hà Nội vì khu vực này đường
+              rất ngắn nhưng do được quy hoạch thiết kế ô bàn cờ nên nếu không
+              tinh ý du khách rất dễ bị lạc ở đây
+            </li>
+            <li>
+              Chú ý chiều đón xe bus vì đa số đường xa ở Hà Nội là đường hai
+              chiều mà lộ trình xe bus chiều đi và về nhiều tuyến rất khác nhau
+            </li>
+            <li>
+              Khi đi các khu chợ ở Hà Nội mua sắm như chợ Đồng Xuân, chợ đêm
+              Hàng Đào du khách lưu ý trả giá hợp lý và thỏa thuận trước với
+              người bán hàng
+            </li>
+            <li>
+              Khi du lịch Hà Nội vào mùa đông du khách nên mang áo ấm vì thời
+              tiết lúc này rất lạnh
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="useful">
+          <h2>THÔNG TIN HỮU ÍCH</h2>
+          <p>
+            Hãy chuẩn bị trước các thông tin để chuẩn bị cuộc hành trình khám
+            phá đầy thú vị!
+          </p>
+          <br />
+          <div class="useful-info">
+            <div class="money-exchange">
+              <div class="money">
+                <h4><i class="bi bi-wallet2"></i></h4>
+                <h4 id="money-header">Quy đổi tiền tệ</h4>
+              </div>
+              <hr />
+              <div class="exchange-flex">
+                <div class="exchange">
+                  <input type="text" placeholder="nhập số tiền" />
+                  <select class="select">
+                    <option value="">VND</option>
+                    <option value="eur">EUR</option>
+                    <option value="sgd">SGD</option>
+                    <option value="cny">CNY</option>
+                    <option value="myr">MYR</option>
+                    <option value="usd">USD</option>
+                    <option value="rub">RUB</option>
+                    <option value="aud">AUD</option>
+                    <option value="twd">TWD</option>
+                  </select>
+                </div>
+                <svg
+                  id="transferCurrency"
+                  onclick="onTransferCurrency()"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="cursor: pointer"
+                >
+                  <path
+                    id="Vector"
+                    d="M1.5 6.64706H18.1309L12.5873 1M18.5 11.3529H1.86911L7.41274 17"
+                    stroke="#FCFCFD"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <div class="exchange">
+                  <input type="text" placeholder="nhập số tiền" />
+                  <select class="select">
+                    <option value="">VND</option>
+                    <option value="eur">EUR</option>
+                    <option value="sgd">SGD</option>
+                    <option value="cny">CNY</option>
+                    <option value="myr">MYR</option>
+                    <option value="usd">USD</option>
+                    <option value="rub">RUB</option>
+                    <option value="aud">AUD</option>
+                    <option value="twd">TWD</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="weather">
+              <div class="weather-header">
+                <h4><i class="bi bi-thermometer-sun"></i></h4>
+                <h4>Thời tiết tại TP.HCM</h4>
+              </div>
+              <hr />
+              <div class="status">
+                <div class="status-each-date">
+                  <div class="status-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <div class="status-info">
+                    <h5>THỨ NĂM</h5>
+                    <p>25/01/2024</p>
+                    <p class="status-note">Nhiều Mây</p>
+                    <h4>10°C<span>/9°C</span></h4>
+                  </div>
+                </div>
+                <div class="status-each-date">
+                  <div class="status-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <div class="status-info">
+                    <h5>THỨ SÁU</h5>
+                    <p>25/01/2024</p>
+                    <p class="status-note">Nhiều Mây</p>
+                    <h4>10°C<span>/9°C</span></h4>
+                  </div>
+                </div>
+                <div class="status-each-date">
+                  <div class="status-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <div class="status-info">
+                    <h5>THỨ BẢY</h5>
+                    <p>25/01/2024</p>
+                    <p class="status-note">Nhiều Mây</p>
+                    <h4>10°C<span>/9°C</span></h4>
+                  </div>
+                </div>
+                <div class="status-each-date">
+                  <div class="status-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <div class="status-info">
+                    <h5>CHỦ NHẬT</h5>
+                    <p>25/01/2024</p>
+                    <p class="status-note">Nhiều Mây</p>
+                    <h4>10°C<span>/9°C</span></h4>
+                  </div>
+                </div>
+                <div class="status-each-date">
+                  <div class="status-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <div class="status-info">
+                    <h5>THỨ HAI</h5>
+                    <p>25/01/2024</p>
+                    <p class="status-note">Nhiều Mây</p>
+                    <h4>10°C<span>/9°C</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="register-info">
+          <div class="register">
+            <h4>YÊU THÀNH PHỐ HỒ CHÍ MINH</h4>
+            <p>
+              Bạn hãy đăng ký ngay hôm nay để hưởng thêm nhiều ưu đãi đặc biệt
+              dành riêng cho chặng bay tới Thủ đô ngàn năm văn hiến nhé!
+            </p>
+            <form action="" method="post">
+              <label for="email">Email *</label><br />
+              <input type="email" />
+              <button type="submit">ĐĂNG KÍ</button>
+            </form>
+            <div class="tickbox">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label for="checkbox"
+                >Tôi đồng ý với các điều khoản, điều lại từ Bamboo Airway
+                *</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="additional">
+        <div class="new-location">
+          <h2>THÊM ĐIỂM ĐẾN</h2>
+          <div class="locate">
+            <div class="tour01">
+              <div class="tour">
+                <h3>Hà Nội</h3>
+                <h3>></h3>
+              </div>
+            </div>
+            <div class="tour02">
+              <div class="tour">
+                <h3>Đà Nẵng</h3>
+                <h3>></h3>
+              </div>
+            </div>
+            <div class="tour03">
+              <div class="tour">
+                <h3>Côn Đảo</h3>
+                <h3>></h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <div class="slide-scroll">
-      <div class="slide01">
-        <div class="slide01-pic">
-          <img src="./picture/SGN-nhatho.jpg" alt="" />
-          <p>NHÀ THỜ ĐỨC BÀ</p>
-        </div>
-        <div class="slide01-content">
-          <p>
-            Nhà thờ chính tòa Đức Bà Sài Gòn, thường được gọi tắt là Nhà thờ Đức
-            Bà, là nhà thờ chính tòa của Tổng giáo phận Sài Gòn. Nhà thờ không
-            chỉ là biểu tượng của Công giáo ở Việt Nam, mà còn là một trong
-            những công trình kiến trúc độc đáo của Thành phố Hồ Chí Minh và điểm
-            đến nổi tiếng với du khách.
-          </p>
-        </div>
-      </div>
-      <div class="slide01">
-        <div class="slide01-pic">
-          <img src="./picture/SGN-phodibo.jpg" alt="" />
-          <p>PHỐ ĐI BỘ NGUYỄN HUỆ</p>
-        </div>
-        <div class="slide01-content">
-          <p>
-            Phố đi bộ Nguyễn Huệ được khánh thành vào đúng dịp lễ 30/04 năm 2015
-            với 2 khu vực chính là quảng trường Nguyễn Huệ kéo dài từ đường Lê
-            Lợi đến đường Tôn Đức Thắng và công viên tượng đài Chủ tịch Hồ Chí
-            Minh kéo dài từ đường Lê Thánh Tông đến đường Lê Lợi. Tổng chiều dài
-            của phố đi bộ là 670m và chiều rộng là 64m với toàn bộ khu vực quảng
-            trường được lát đá granite.
-          </p>
-        </div>
-      </div>
-      <div class="slide01">
-        <div class="slide01-pic">
-          <img src="./picture/SGN-landmark.jpg" alt="" />
-          <p>TÒA NHÀ LANDMARK 81</p>
-        </div>
-        <div class="slide01-content">
-          <p>
-            Là một trong những địa điểm vui chơi - giải trí nổi bật tại thành
-            phố Hồ Chí Minh, Landmark 81 quy tụ nhiều thương hiệu nổi tiếng
-            trong nước và quốc tế, mang đến trải nghiệm mua sắm tuyệt vời cho
-            khách hàng. Đây là tòa tháp cao nhất Việt Nam, đồng thời là một
-            trong những tòa nhà cao nhất Châu Á và thế giới. Landmark 81 được
-            lấy cảm hứng từ “lũy tre làng” truyền thống, tượng trưng cho sự phát
-            triển và thịnh vượng của đất nước.
-          </p>
-        </div>
-      </div>
-      <div class="slide01">
-        <div class="slide01-pic">
-          <img src="./picture/SGN-buivien.jpg" alt="" />
-          <p>PHỐ TÂY BÙI VIỆN</p>
-        </div>
-        <div class="slide01-content">
-          <p>
-            Phố Bùi Viện đã từng được biết đến là khu Tây ba lô do lượng khách
-            du lịch đến đây chủ yếu từ các nước phương Tây và là nơi “ăn chơi”
-            dành riêng cho các bạn trẻ Sài Thành. Con phố vốn đã nhộn nhịp nay
-            càng trở nên tấp nập, đông vui hơn nữa. Phố đi bộ Bùi Viện 2 ngày
-            cuối tuần trở nên náo nhiệt hơn bao giờ hết bởi các hoạt động vui
-            chơi giải trí độc đáo, hấp dẫn. Nhiều màn biểu diễn nghệ thuật từ
-            các vỉa hè cho đến dưới lòng đường thu hút được rất nhiều du khách,
-            tạo nên không khí hết sức sôi động. Các trò chơi dân gian như nhảy
-            dây, ô ăn quan,… đã nhận được sự quan tâm đặc biệt từ các du khách
-            nước ngoài.
-          </p>
-        </div>
-      </div>
-    </div>
-
+    <!-- FOOTER -->
     <div class="footer">
       <footer>
         <div class="foot01">
